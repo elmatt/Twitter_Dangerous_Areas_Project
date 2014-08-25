@@ -8,10 +8,10 @@ import json
 from HTMLParser import HTMLParser
 
 
-ckey = 'BbxzaRoqM2jeIrAHQKfH5yLtb'''
-csecret = '59pR1xVPa2DBlLyNX9xqt2YsTm8Fvle0CdXGxu1CSPBl4RXniN'''
-atoken = '2719975051-LIY8K1c1hRm2VyOQWIXfetdTfAVbQ657bkZXsEp'''
-asecret = 'EGKaNnOr344yFPDW5gJGor1yxQVKwMrmppShktiUA3dTz'''
+ckey = ''' #private
+csecret = '''
+atoken = '''
+asecret = '''
 
 m = Basemap(projection='mill', llcrnrlat=20, urcrnrlat=50,\
         llcrnrlon=-130, urcrnrlon=-60, resolution ='c')
@@ -39,10 +39,7 @@ class listener(StreamListener):
             self.y.append(yt)
             m.plot(self.x, self.y, 'ro', markersize=5, alpha=.5)
 
-            #return True
-    #def plotAll(self):
-        #print("does this get researched")
-        #m.plot(self.x, self.y, 'ro', markersize=20, alpha=.5)
+        
 
 Plotter = listener()
 try:
